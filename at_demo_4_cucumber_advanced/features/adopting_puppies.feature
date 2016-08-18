@@ -43,10 +43,10 @@ Scenario Outline: Adopting many puppies
 	Then I should see "Thank you for adopting a puppy!"
 
 Examples:
-| name	| address 			| email							| pay_type			|
-| juanjo | Aramburu 1005	| juanjo@gmail.com		| Credit card 		|
-| jose	| Benavides 123	| jose@hotmail.com	| Check 				|
-| ash	| San Miguel 987	| ash@pokemon.net	| Purchase order	|
+| name	 | address		  | email			 | pay_type		  |
+| juanjo | Aramburu 1005  | juanjo@gmail.com | Credit card	  |
+| jose	 | Benavides 123  | jose@hotmail.com | Check		  |
+| ash	 | San Miguel 987 | ash@pokemon.net  | Purchase order |
 
 #@important
 Scenario: Validate cart with one puppy
@@ -92,8 +92,8 @@ Scenario: Adopting a puppy using a table
 	And I click the Adopt Me button
 	And I click the Complete the Adoption button
 	And I complete the adoption with:
-	| name		| address 			| email 			 					| pay_type	|
-	| juanjo		| Aramburu 1005 	| j.j.v.sevilla@gmail.com	| Check		|
+	| name   | address 		 | email 			 | pay_type	|
+	| juanjo | Aramburu 1005 | sevilla@gmail.com | Check 	|
 	Then I should see "Thank you for adopting a puppy!"	
 
 #@important

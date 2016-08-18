@@ -3,11 +3,10 @@ As a puppy lover
 I want to adopt puppies
 So they can chew my furniture
 
-#Background:
-#Given I am on the puppy adoption site
+Background:
+	Given I am on the puppy adoption site
 
 Scenario: Adopting one puppy
-	Given I am on the puppy adoption site
 	When I click the View Details button
 	And I click the Adopt Me button
 	And I click the Complete the Adoption button
@@ -19,7 +18,6 @@ Scenario: Adopting one puppy
 	Then I should see "Thank you for adopting a puppy!"
 
 Scenario: Adopting two puppies
-	Given I am on the puppy adoption site
 	When I click the first View Details button
 	And I click the Adopt Me button
 	And I click the Adopt Another Puppy button
@@ -34,7 +32,6 @@ Scenario: Adopting two puppies
 	Then I should see "Thank you for adopting a puppy!"
 
 Scenario Outline: Adopting many puppies
-	Given I am on the puppy adoption site
 	When I click the first View Details button
 	And I click the Adopt Me button
 	And I click the Complete the Adoption button
